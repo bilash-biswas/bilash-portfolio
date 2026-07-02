@@ -215,7 +215,7 @@ export default function Hero() {
               {/* Portrait wrap */}
               <div className="absolute inset-1 rounded-2xl bg-bg-light dark:bg-bg-dark overflow-hidden flex items-center justify-center">
                 <Image
-                  src="/bilash_portrait.png"
+                  src="/bilash_portrait.webp"
                   alt="Bilash Kumar Biswas"
                   fill
                   priority

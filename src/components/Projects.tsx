@@ -8,11 +8,11 @@ import { portfolioData, ProjectItem } from "@/data/portfolioData";
 
 export default function Projects() {
   const projectImages: { [key: string]: string } = {
-    corebank: "/corebank_ui.png",
-    walletflow: "/walletflow_ui.png",
-    bcsplatform: "/bcsplatform_ui.png",
-    "collab-editor": "/collab_editor_ui.png",
-    logicbuild: "/bcsplatform_ui.png"
+    corebank: "/corebank_ui.webp",
+    walletflow: "/walletflow_ui.webp",
+    bcsplatform: "/bcsplatform_ui.webp",
+    "collab-editor": "/collab_editor_ui.webp",
+    logicbuild: "/bcsplatform_ui.webp"
   };
 
   const containerVariants = {
@@ -54,7 +54,7 @@ export default function Projects() {
           className="grid grid-cols-1 lg:grid-cols-3 gap-8"
         >
           {portfolioData.projects.map((project: ProjectItem) => {
-            const imageUrl = projectImages[project.id] || "/corebank_ui.png";
+            const imageUrl = projectImages[project.id] || "/corebank_ui.webp";
             
             return (
               <motion.div
