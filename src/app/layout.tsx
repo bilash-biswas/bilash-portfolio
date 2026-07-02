@@ -55,6 +55,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${outfit.variable} ${firaCode.variable} font-sans min-h-screen antialiased relative overflow-x-hidden`}
+        suppressHydrationWarning
       >
         <ThemeProvider
           attribute="class"

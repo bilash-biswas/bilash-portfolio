@@ -156,7 +156,7 @@ export const portfolioData: PortfolioData = {
         "Engineered device keychains authentication vectors (secure local credentials storage).",
         "Integrated RabbitMQ for asynchronous transaction auditing and background message processing."
       ],
-      githubUrl: "https://github.com/bilashbiswas",
+      githubUrl: "https://github.com/bilash-biswas",
       liveUrl: "https://github.com/bilashbiswas"
     },
     {
@@ -171,7 +171,7 @@ export const portfolioData: PortfolioData = {
         "Managed local device security with Android’s Biometric API hardware fingerprint authentication.",
         "Integrated WorkManager for automated threshold budget background alert triggers."
       ],
-      githubUrl: "https://github.com/bilashbiswas",
+      githubUrl: "https://github.com/bilash-biswas",
       liveUrl: "https://github.com/bilashbiswas"
     },
     {
@@ -186,7 +186,7 @@ export const portfolioData: PortfolioData = {
         "Deployed live on AWS EC2 behind a host Nginx reverse proxy for SSL termination and static routing.",
         "Automated container volume pruning and live code rollouts via custom GitHub Actions CI/CD workflows."
       ],
-      githubUrl: "https://github.com/bilashbiswas",
+      githubUrl: "https://github.com/bilash-biswas",
       liveUrl: "https://github.com/bilashbiswas"
     }
   ],
