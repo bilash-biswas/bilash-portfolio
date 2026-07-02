@@ -24,21 +24,13 @@ export default function Footer() {
     <footer className="border-t border-slate-200/50 dark:border-slate-800/50 bg-white/40 dark:bg-bg-dark/40 backdrop-blur-md py-12 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
         
-        {/* Left: Branding & Copy */}
+        {/* Left: Simplified Clean Copy */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1">
-          <div className="flex items-center gap-2">
-            <span className="w-8 h-8 rounded-lg bg-gradient-to-tr from-primary to-accent flex items-center justify-center text-white font-extrabold text-sm shadow-md">
-              B
-            </span>
-            <span className="font-bold text-base text-slate-900 dark:text-slate-50">
-              {portfolioData.name}
-            </span>
-          </div>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-2 font-mono">
-            Designed & Engineered with Next.js 15 & Tailwind CSS
-          </p>
-          <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
-            © {new Date().getFullYear()} Bilash Kumar Biswas. All rights reserved.
+          <span className="font-semibold text-sm text-slate-800 dark:text-slate-200">
+            {portfolioData.name}
+          </span>
+          <p className="text-xs text-slate-400 dark:text-slate-500">
+            © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
 

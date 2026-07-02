@@ -6,7 +6,7 @@ export interface StatCard {
 
 export interface SkillCategory {
   category: string;
-  skills: { name: string; proficiency: number }[]; // proficiency from 0-100 for visual bars
+  skills: string[];
 }
 
 export interface ProjectItem {
@@ -66,12 +66,12 @@ export const portfolioData: PortfolioData = {
   name: "Bilash Kumar Biswas",
   title: "Full-Stack Software Engineer",
   subtitles: [
-    "Backend Architecture",
+    "Backend Systems Architect",
     "Mobile Application Specialist",
-    "DevOps Enthusiast"
+    "DevOps & Cloud Engineer"
   ],
   summary:
-    "Detail-oriented Full-Stack Software Engineer with advanced technical expertise spanning complex backend API architectures, frontend systems, and cross-platform mobile application development. Leveraging intermediate-to-advanced algorithmic problem-solving skills, modern DevOps tools, and clean engineering design patterns to build secure, concurrent, and highly scalable software ecosystems.",
+    "Results-driven Full-Stack Software Engineer with a proven track record of architecting distributed backend systems, high-performance offline-first mobile applications, and automated cloud infrastructures. Combines strong analytical foundations in data structures and algorithmic complexity with modern software design patterns (Clean Architecture, MVVM) to build secure, concurrent, and highly scalable production ecosystems.",
   stats: [
     {
       value: "325+",
@@ -79,9 +79,9 @@ export const portfolioData: PortfolioData = {
       subText: "LeetCode & Beecrowd"
     },
     {
-      value: "3+",
-      label: "Production-Grade Projects Deployed",
-      subText: "Full-Stack Ecosystems"
+      value: "10+",
+      label: "Projects & Repositories Completed",
+      subText: "Active GitHub Open-Source Codebases"
     },
     {
       value: "5+",
@@ -92,54 +92,34 @@ export const portfolioData: PortfolioData = {
   skills: [
     {
       category: "Backend Engineering",
-      skills: [
-        { name: "Java (Spring Boot)", proficiency: 90 },
-        { name: "C#/.NET Core", proficiency: 85 },
-        { name: "Python (Django REST Framework)", proficiency: 88 },
-        { name: "Node.js", proficiency: 80 }
-      ]
+      skills: ["Java (Spring Boot)", "C#/.NET Core", "Python (Django & FastAPI)", "Node.js (Express & NestJS)"]
     },
     {
       category: "Frontend Web Systems",
-      skills: [
-        { name: "Next.js", proficiency: 92 },
-        { name: "React", proficiency: 95 },
-        { name: "TypeScript", proficiency: 90 },
-        { name: "JavaScript", proficiency: 95 },
-        { name: "HTML5/CSS3", proficiency: 90 }
-      ]
+      skills: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5/CSS3"]
     },
     {
       category: "Mobile App Development",
-      skills: [
-        { name: "Flutter (Dart)", proficiency: 92 },
-        { name: "Kotlin (Jetpack Compose)", proficiency: 80 },
-        { name: "React Native", proficiency: 85 }
-      ]
+      skills: ["Flutter (Dart)", "React Native (Expo)", "Kotlin (Jetpack Compose)", "Android Native (Java/XML)"]
     },
     {
       category: "Databases & Caching",
-      skills: [
-        { name: "PostgreSQL", proficiency: 88 },
-        { name: "MySQL", proficiency: 85 },
-        { name: "SQLite", proficiency: 80 },
-        { name: "MongoDB", proficiency: 82 },
-        { name: "Firebase", proficiency: 85 },
-        { name: "Redis", proficiency: 88 }
-      ]
+      skills: ["PostgreSQL", "MySQL", "SQLite", "MongoDB", "Firebase", "Redis"]
     },
     {
       category: "Architecture & DevOps",
       skills: [
-        { name: "Clean Architecture & MVVM", proficiency: 90 },
-        { name: "Git & GitHub CI/CD", proficiency: 92 },
-        { name: "Docker & Docker Compose", proficiency: 88 },
-        { name: "Kubernetes", proficiency: 75 },
-        { name: "Linux Administration", proficiency: 80 },
-        { name: "RabbitMQ", proficiency: 82 },
-        { name: "GraphQL", proficiency: 80 },
-        { name: "WebSockets / Daphne Channels", proficiency: 85 },
-        { name: "Relational Database Design", proficiency: 90 }
+        "Clean Architecture & MVVM",
+        "Microservices & Modular Monoliths",
+        "AWS (EC2, S3, RDS, Route53)",
+        "Git & GitHub CI/CD",
+        "Linux Administration",
+        "Kubernetes",
+        "Docker & Docker Compose",
+        "GraphQL",
+        "WebSockets / Daphne Channels",
+        "RabbitMQ",
+        "Relational Database Design"
       ]
     }
   ],
@@ -156,8 +136,8 @@ export const portfolioData: PortfolioData = {
         "Engineered device keychains authentication vectors (secure local credentials storage).",
         "Integrated RabbitMQ for asynchronous transaction auditing and background message processing."
       ],
-      githubUrl: "https://github.com/bilash-biswas",
-      liveUrl: "https://github.com/bilashbiswas"
+      githubUrl: "https://github.com/bilash-biswas/secure-fullstack-banking.git",
+      liveUrl: ""
     },
     {
       id: "walletflow",
@@ -171,8 +151,8 @@ export const portfolioData: PortfolioData = {
         "Managed local device security with Android’s Biometric API hardware fingerprint authentication.",
         "Integrated WorkManager for automated threshold budget background alert triggers."
       ],
-      githubUrl: "https://github.com/bilash-biswas",
-      liveUrl: "https://github.com/bilashbiswas"
+      githubUrl: "https://github.com/bilash-biswas/Expense-and-Budget-Tracker-App-Jetpack-Compose.git",
+      liveUrl: ""
     },
     {
       id: "bcsplatform",
@@ -186,8 +166,38 @@ export const portfolioData: PortfolioData = {
         "Deployed live on AWS EC2 behind a host Nginx reverse proxy for SSL termination and static routing.",
         "Automated container volume pruning and live code rollouts via custom GitHub Actions CI/CD workflows."
       ],
-      githubUrl: "https://github.com/bilash-biswas",
-      liveUrl: "https://github.com/bilashbiswas"
+      githubUrl: "https://github.com/bilash-biswas/bcs-preparation-platform.git",
+      liveUrl: ""
+    },
+    {
+      id: "collab-editor",
+      title: "CollabEdit (Real-Time Collaborative Code Editor & Ecosystem)",
+      category: "Real-Time Systems / DevOps",
+      description:
+        "Architected a real-time collaborative coding ecosystem featuring a NestJS WebSocket API, isolated Docker container execution sandboxes, Next.js web editor, and Expo mobile app.",
+      tech: ["NestJS", "Next.js 15", "React Native (Expo)", "Redis", "RabbitMQ", "PostgreSQL", "Dockerode", "Kubernetes", "Prisma"],
+      keyFeats: [
+        "Integrated Socket.io with Redis adapter for real-time code sync, multi-user cursors, and live presence state management.",
+        "Engineered isolated code execution sandboxes in Docker containers via Dockerode for secure JavaScript/TypeScript/Python runtimes.",
+        "Implemented version backups queued asynchronously using RabbitMQ background tasks, and deployable via Kubernetes configurations."
+      ],
+      githubUrl: "https://github.com/bilash-biswas/realtime-collaborative-code-editor.git",
+      liveUrl: ""
+    },
+    {
+      id: "logicbuild",
+      title: "LogicBuild (Dockerized Online Judge & Code Battles Platform)",
+      category: "Real-Time Systems / Core Engine",
+      description:
+        "Engineered a full-stack competitive programming and matchmaking battle platform with isolated Docker/Kubernetes container execution engines.",
+      tech: ["React", "Express", "BullMQ", "PostgreSQL", "Redis", "Docker (DinD)", "Kubernetes", "JWT"],
+      keyFeats: [
+        "Architected a scalable code execution queue using BullMQ and Redis for high-throughput asynchronous job processing.",
+        "Engineered isolated Docker-in-Docker sandboxes for secure runtime evaluations across 9 programming languages.",
+        "Implemented real-time 1v1 matchmaking battles and ELO-based leaderboard tracking using Socket.io and PostgreSQL triggers."
+      ],
+      githubUrl: "https://github.com/bilash-biswas/dockerized-code-judge.git",
+      liveUrl: ""
     }
   ],
   achievements: [
@@ -237,8 +247,8 @@ export const portfolioData: PortfolioData = {
   contact: {
     city: "Dhaka",
     country: "Bangladesh",
-    email: "bilash.eee.iu@gmail.com",
-    github: "https://github.com/bilashbiswas",
-    linkedin: "https://linkedin.com/in/bilash-kumar-biswas"
+    email: "bilashbiswas51@gmail.com",
+    github: "https://github.com/bilash-biswas",
+    linkedin: "https://linkedin.com/in/bilash-biswas"
   }
 };

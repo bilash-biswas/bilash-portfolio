@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Bilash Kumar Biswas | Full-Stack Software Engineer",
     description:
       "Explore the portfolio of Bilash Kumar Biswas, a software engineer with expertise in distributed systems, offline-first mobile apps, and scalable web apps.",
-    url: "https://github.com/bilashbiswas",
+    url: "https://github.com/bilash-biswas",
     siteName: "Bilash Kumar Biswas Portfolio",
     locale: "en_US",
     type: "website",

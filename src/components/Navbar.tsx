@@ -124,10 +124,10 @@ export default function Navbar() {
             </span>
             <div className="flex flex-col">
               <span className="font-bold text-base leading-tight tracking-tight text-slate-900 dark:text-slate-50 group-hover:text-primary transition-colors">
-                Bilash Kumar
+                Bilash Kumar Biswas
               </span>
               <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                portfolio.dev
+                Software Engineer
               </span>
             </div>
           </a>

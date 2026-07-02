@@ -95,25 +95,19 @@ export default function Skills() {
                   </h4>
                 </div>
 
-                {/* Skill List with Progress Gauges */}
-                <div className="flex flex-col gap-5">
-                  {catData.skills.map((skill) => (
-                    <div key={skill.name} className="flex flex-col gap-1.5">
-                      <div className="flex justify-between text-sm font-semibold">
-                        <span className="text-slate-800 dark:text-slate-200">{skill.name}</span>
-                        <span className="text-slate-500 dark:text-slate-400 font-mono">{skill.proficiency}%</span>
-                      </div>
-                      
-                      {/* Progress bar tracks */}
-                      <div className="h-2 w-full rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={{ width: `${skill.proficiency}%` }}
-                          transition={{ duration: 0.8, ease: "easeOut", delay: 0.05 }}
-                          className="h-full rounded-full bg-gradient-to-r from-primary to-accent"
-                        />
-                      </div>
-                    </div>
+                {/* Skill List with Premium Pill Badges */}
+                <div className="flex flex-wrap gap-2.5 mt-2">
+                  {catData.skills.map((skill, idx) => (
+                    <motion.span
+                      key={skill}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.3, delay: idx * 0.03 }}
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      className="px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-50/80 dark:bg-slate-900/80 text-slate-800 dark:text-slate-200 border border-slate-200/60 dark:border-slate-800/80 hover:border-primary/50 dark:hover:border-primary/50 hover:text-primary dark:hover:text-primary hover:shadow-sm hover:shadow-primary/5 transition-colors duration-200 flex items-center justify-center cursor-default select-none font-medium"
+                    >
+                      {skill}
+                    </motion.span>
                   ))}
                 </div>
               </motion.div>

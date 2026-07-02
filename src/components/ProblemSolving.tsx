@@ -58,7 +58,7 @@ export default function ProblemSolving() {
               Leveraging Data Structures & Algorithmic Optimizations
             </h4>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
-              A solid foundation in computer science is core to engineering resilient software. By actively participating in competitive programming, I solve complex constraints and optimize time and space complexity ($O(N)$, $O(\log N)$) on leading platforms.
+              A solid foundation in computer science is core to engineering resilient software. By actively participating in competitive programming, I solve complex constraints and optimize time and space complexity (O(N), O(log N)) on leading platforms.
             </p>
             <div className="flex flex-col gap-3 font-medium text-slate-700 dark:text-slate-400 text-sm">
               <div className="flex items-center gap-2">

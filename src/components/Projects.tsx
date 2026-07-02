@@ -10,7 +10,9 @@ export default function Projects() {
   const projectImages: { [key: string]: string } = {
     corebank: "/corebank_ui.png",
     walletflow: "/walletflow_ui.png",
-    bcsplatform: "/bcsplatform_ui.png"
+    bcsplatform: "/bcsplatform_ui.png",
+    "collab-editor": "/collab_editor_ui.png",
+    logicbuild: "/bcsplatform_ui.png"
   };
 
   const containerVariants = {
@@ -69,6 +71,7 @@ export default function Projects() {
                     fill
                     className="object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
                     sizes="(max-w-768px) 100vw, 384px"
+                    priority={project.id === "corebank"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 </div>
@@ -127,7 +130,7 @@ export default function Projects() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:bg-slate-50 dark:hover:bg-slate-850 hover:scale-[1.02] active:scale-[0.98] font-bold text-xs flex items-center justify-center gap-1.5 transition-all text-slate-700 dark:text-slate-300 cursor-pointer"
+                        className="flex-1 px-4 py-2.5 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-slate-800 dark:text-slate-100 font-bold text-xs flex items-center justify-center gap-1.5 transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                       >
                         <Github className="w-4 h-4" />
                         Codebase
@@ -164,7 +167,7 @@ export default function Projects() {
             href={portfolioData.contact.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-slate-950 dark:bg-white text-white dark:text-slate-950 font-bold hover:bg-slate-800 dark:hover:bg-slate-100 shadow-md hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all group cursor-pointer border border-slate-800 dark:border-slate-200"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-slate-900 dark:bg-slate-900/50 text-white font-bold hover:bg-slate-800 dark:hover:bg-slate-800/80 shadow-md dark:shadow-none hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all group cursor-pointer border border-slate-900 dark:border-slate-800 hover:border-slate-800 dark:hover:border-slate-700"
           >
             <Github className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
             <span>View All Projects on GitHub</span>

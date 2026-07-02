@@ -74,7 +74,7 @@ export default function About() {
                 <span className="font-semibold text-slate-800 dark:text-slate-200">Location:</span> {portfolioData.contact.city}, {portfolioData.contact.country}
               </div>
               <div>
-                <span className="font-semibold text-slate-800 dark:text-slate-200">Expertise:</span> Microservices, Mobile Architecture, CI/CD
+                <span className="font-semibold text-slate-800 dark:text-slate-200">Expertise:</span> Distributed Systems, Mobile Architecture, Cloud DevOps
               </div>
             </div>
           </motion.div>
