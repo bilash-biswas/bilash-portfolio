@@ -148,7 +148,7 @@ export default function Hero() {
               className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
             >
               <a
-                href="/resume.pdf"
+                href="/Bilash_Kumar_Biswas_CV.pdf"
                 download="Bilash_Kumar_Biswas_CV.pdf"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-white font-bold flex items-center justify-center gap-2 hover:bg-blue-700 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
               >
